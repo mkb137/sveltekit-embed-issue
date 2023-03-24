@@ -1,7 +1,7 @@
 function handleClick() {
     console.log(` - button is clicked`)
     $.ajax({
-        url: "http://localhost:5173/embedded",
+        url: "/embedded",
         success: function(html) {
             console.log(` - loaded successfully`)
             $("#svelte-target").html(html)
