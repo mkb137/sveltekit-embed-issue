@@ -1,4 +1,4 @@
-import type { Handle } from '@sveltejs/kit';
+import type { Handle } from 'kit/packages/kit';
 
 export const handle = (async ({ event, resolve }) => {
     console.log(`handle - event = `, event)
