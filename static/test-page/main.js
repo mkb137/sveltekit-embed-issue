@@ -4,6 +4,9 @@ function handleClick() {
         url: "/embedded",
         success: function(html) {
             console.log(` - loaded successfully`)
+            // Replace some scripts to prevent them from firing
+            //html = html.replace("start.js", "start.js.fail")
+            // Load the HTML
             $("#svelte-target").html(html)
         }
     })
